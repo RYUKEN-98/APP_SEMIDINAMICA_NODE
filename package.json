@@ -1,7 +1,7 @@
 {
   "name": "app_semidinamica_node",
   "version": "1.0.0",
-  "description": "",
+  "description": "Instalar los paquetes de Nodemon",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
