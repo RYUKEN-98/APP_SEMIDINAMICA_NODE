@@ -7,6 +7,12 @@ Para crear Webserver en un entorno Local
 const express = require('express');
 const app = express();
 const port = 9696;
+//Const port =9696;
+
+//Importar el paquete de dotenv
+
+require('dotenv').config();
+constport = process.env.PORT;
 
 // Mostrar contenido de la carpeta public 
 app.use(express.static('public'));
@@ -34,6 +40,6 @@ app.get('*', (req, res) => {
 
 
 //* se necesita activar el puerto pára el WebServer
-app.listen(port,()=> {
+app.listen(port, () => {
     console.log('Webserver activo en el puerto ${port}?')
 })
